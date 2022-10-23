@@ -1,7 +1,7 @@
 // Below add function is an algorithm
 private fun add(x: Int, y: Int) = x + y
 
-// Below example is also an exampleof Algorithm
+// Below example is also an example of Algorithm
 val hourInMillis = 24 * 60 * 60 * 1000
 
 class ExamplesImplementation {

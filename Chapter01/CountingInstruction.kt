@@ -1,11 +1,11 @@
 fun main(args: Array<String>) {
-    val x = 10
-	val y = x * 2
-	for (i in 0..y) {
-        if (i % 2 == 0) {
-            println("$i is Even")
+    val x = 10 // No of Instruction is 1
+	val y = x * 2 // No of Instruction is 3
+	for (i in 0..y) { // No of Instruction is 2n (i = 0 & i < y) + 2n (i < y & i++)
+        if (i % 2 == 0) { // No of Instruction is 2n (i % 2 & mod value == 0)
+            println("$i is Even") // No of Instruction is 2n (get the value of i & print i with string constant)
         } else {
-            println("$i is Odd");
+            println("$i is Odd")
         }
     }
 }
