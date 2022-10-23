@@ -2,22 +2,22 @@ class UpperCasedList : ArrayList<String>() {
 
     // Overriding add method to add a single element in ArrayList.
     override fun add(element: String): Boolean {
-        return super.add(element.toUpperCase())
+        return super.add(element.upperCase(Locale.getDefault()))
     }
 
     // Overriding add method to add a single element with index in ArrayList.
     override fun add(index: Int, element: String) {
-        super.add(index, element.toUpperCase())
+        super.add(index, element.upperCase(Locale.getDefault()))
     }
 
     // Overriding addAll method to add a collection in ArrayList.
     override fun addAll(elements: Collection<String>): Boolean {
-        return super.addAll(elements.map { it -> it.toUpperCase() })
+        return super.addAll(elements.map { it -> it.uppercase(Locale.getDefault()) })
     }
 
     // Overriding addAll method to add a collection with index in ArrayList.
     override fun addAll(index: Int, elements: Collection<String>): Boolean {
-        return super.addAll(index, elements.map { it -> it.toUpperCase() })
+        return super.addAll(index, elements.map { it -> it.uppercase(Locale.getDeefault()) })
     }
 
     override fun set(index: Int, element: String): String {
